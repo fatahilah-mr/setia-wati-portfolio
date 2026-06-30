@@ -355,9 +355,9 @@ export default function App() {
       <section className="section" id="favorit" style={{ backgroundColor: '#ffffff' }}>
         <div className="container">
           <h2 className="section-title" id="favorites-section-title">Idola</h2>
-          {/* <p className="section-subtitle" id="favorites-section-subtitle">
-            Dari panggung akting drama romantis hingga lapangan hijau, inilah jajaran tokoh idola yang selalu mewarnai hari-hari saya.
-          </p> */}
+          <p className="section-subtitle" id="favorites-section-subtitle">
+            Inilah beberapa tokoh idola yang selalu mewarnai hari-hari saya.
+          </p>
 
           <div className="favorites-grid" id="favorites-cards-container">
             
