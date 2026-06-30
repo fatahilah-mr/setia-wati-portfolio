@@ -283,7 +283,7 @@ export default function App() {
                 Halo! Saya <strong>Setia Wati</strong>, biasa disapa <strong>Kwettiau</strong>. Saya adalah seorang lulusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong> berusia 18 tahun dari <strong>SMK Patriot Pituruh</strong>.
               </p>
               <p>
-                Dunia IT tidak pernah gagal membuat saya takjub. Namun, selain menghabiskan waktu dengan merakit jaringan atau berkutat di depan baris kode, saya memiliki keseimbangan hidup yang unik melalui hobi menulis jurnal fiksi serta menjelajahi dunia seni memasak (culinary arts). Bagi saya, memasak adalah bentuk kompilasi resep kehidupan, sementara menulis adalah cara saya menyusun logika naratif yang indah.
+                Dunia IT tidak pernah gagal membuat saya takjub. Namun, selain menghabiskan waktu dengan merakit jaringan atau berkutat di depan baris kode, saya memiliki keseimbangan hidup yang unik melalui hobi menulis jurnal fiksi serta menjelajahi dunia seni memasak. Bagi saya, memasak adalah bentuk kompilasi resep kehidupan, sementara menulis adalah cara saya menyusun logika naratif yang indah.
               </p>
             </div>
 
@@ -354,10 +354,10 @@ export default function App() {
       {/* 5. Favorites Section with premium mouse tilt parallax */}
       <section className="section" id="favorit" style={{ backgroundColor: '#ffffff' }}>
         <div className="container">
-          <h2 className="section-title" id="favorites-section-title">Sosok Favorit</h2>
-          <p className="section-subtitle" id="favorites-section-subtitle">
+          <h2 className="section-title" id="favorites-section-title">Idola</h2>
+          {/* <p className="section-subtitle" id="favorites-section-subtitle">
             Dari panggung akting drama romantis hingga lapangan hijau, inilah jajaran tokoh idola yang selalu mewarnai hari-hari saya.
-          </p>
+          </p> */}
 
           <div className="favorites-grid" id="favorites-cards-container">
             
