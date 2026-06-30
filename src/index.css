@@ -106,26 +106,30 @@ body {
   box-shadow: var(--shadow-hover);
 }
 
-/* Header & Navbar (Mobile First) */
+/* Header & Navbar (Mobile First) - Modern Floating Island Layout */
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 70px;
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--glass-border);
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid var(--accent-rose);
+  border-radius: 100px;
   z-index: 1000;
   display: flex;
   align-items: center;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
-  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, top 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, top;
+  box-shadow: 0 8px 30px rgba(255, 123, 144, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.9);
 }
 
 .header.hidden {
-  transform: translateY(-100%);
+  transform: translate(0);
 }
 
 .nav-container {
@@ -133,60 +137,92 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0 20px;
 }
 
 .logo {
   font-family: var(--font-serif);
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.45rem;
+  font-weight: 800;
   color: var(--text-main);
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
+  letter-spacing: -0.5px;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .logo span {
   color: var(--accent-rose);
+  display: inline-block;
+  animation: logo-pulse 2s infinite ease-in-out;
+  filter: drop-shadow(0 0 4px rgba(255, 123, 144, 0.6));
 }
 
-/* Nav Menu Mobile */
+@keyframes logo-pulse {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.2) translateY(-2px); }
+}
+
+/* Nav Menu Mobile - Floating Popover Card */
 .nav-menu {
   position: fixed;
-  top: 70px;
-  left: 0;
-  right: 0;
-  background: var(--glass-bg);
+  top: 80px;
+  left: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--glass-border);
+  border: 1.5px solid var(--accent-rose);
+  border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 0;
-  gap: 20px;
-  transform: translateY(-150%);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 24px;
+  gap: 12px;
+  transform: scale(0.95) translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
   z-index: 999;
+  box-shadow: 0 15px 35px rgba(255, 123, 144, 0.12);
 }
 
 .nav-menu.active {
-  transform: translateY(0);
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .nav-link {
   font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
   color: var(--text-main);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
-  padding: 4px 8px;
+  padding: 10px 24px;
+  border-radius: 100px;
+  width: 100%;
+  text-align: center;
+  display: block;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover {
   color: var(--accent-rose);
+  background-color: var(--accent-rose-light);
+}
+
+.nav-link.active {
+  color: var(--accent-rose);
+  background-color: var(--accent-rose-light);
+  font-weight: 700;
 }
 
 .menu-toggle {
