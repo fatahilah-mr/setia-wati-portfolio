@@ -331,7 +331,7 @@ export default function App() {
               <Award className="skill-icon" />
               <span>Cisco Packet Tracer</span>
             </div>
-            <div className="skill-badge" id="skill-html">
+            {/* <div className="skill-badge" id="skill-html">
               <Award className="skill-icon" />
               <span>HTML5 Semantic</span>
             </div>
@@ -342,7 +342,7 @@ export default function App() {
             <div className="skill-badge" id="skill-responsive">
               <Award className="skill-icon" />
               <span>Mobile-First Responsive Layout</span>
-            </div>
+            </div> */}
             <div className="skill-badge" id="skill-troubleshooting">
               <Award className="skill-icon" />
               <span>Hardware &amp; Lan Troubleshooting</span>
