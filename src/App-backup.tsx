@@ -176,7 +176,7 @@ export default function App() {
               onClick={(e) => handleSmoothScroll(e, 'favorit')}
               id="nav-link-favorit"
             >
-              Idola
+              Favorit
             </a>
             <a
               href="#motivasi"
@@ -231,7 +231,7 @@ export default function App() {
               <div className="hero-image" style={{ padding: 0, overflow: 'hidden', border: '4px solid var(--card-bg)' }}>
                 <LazyImage
                   src={tiaProfile}
-                  alt="Setia Wati (KWETTIAU)"
+                  alt="Setia Wati (Kwettiau)"
                   id="tia-profile-photo"
                 />
               </div>
@@ -354,7 +354,7 @@ export default function App() {
       {/* 5. Favorites Section with premium mouse tilt parallax */}
       <section className="section" id="favorit" style={{ backgroundColor: '#ffffff' }}>
         <div className="container">
-          <h2 className="section-title" id="favorites-section-title">Sosok Favorit</h2>
+          <h2 className="section-title" id="favorites-section-title">Sosok Favorit &amp; Inspirasi</h2>
           <p className="section-subtitle" id="favorites-section-subtitle">
             Dari panggung akting drama romantis hingga lapangan hijau, inilah jajaran tokoh idola yang selalu mewarnai hari-hari saya.
           </p>
@@ -431,7 +431,7 @@ export default function App() {
       {/* 6. Motivasi Section */}
       <section className="section" id="motivasi" style={{ backgroundColor: '#fff5f6' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          <h2 className="section-title" id="motivasi-title">Motivasi</h2>
+          <h2 className="section-title" id="motivasi-title">Motivasi &amp; Inspirasi</h2>
           <p className="section-subtitle" id="motivasi-subtitle">
             Pilar impian, semangat hidup, dan filosofi sederhana saya dalam berkarya.
           </p>
@@ -453,9 +453,9 @@ export default function App() {
       {/* 7. My Playlist Section */}
       <section className="section" id="playlist" style={{ backgroundColor: '#ffffff' }}>
         <div className="container" style={{ maxWidth: '600px' }}>
-          <h2 className="section-title" id="playlist-section-title">Lagu Favorit</h2>
+          <h2 className="section-title" id="playlist-section-title">Lagu Favorit Saya</h2>
           <p className="section-subtitle" id="playlist-section-subtitle">
-            Lantunan nada penambah fokus dan penyemangat dalam belajar TI.
+            Lantunan nada penambah fokus dan penyemangat hari-hari saya dalam belajar TI.
           </p>
 
           <div className="player-widget" id="music-player-widget" style={{ marginTop: '30px' }}>
