@@ -42,7 +42,7 @@ export default function App() {
 
   const handleSendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoUri = `mailto:setiawati.tia@example.com?subject=${encodeURIComponent(
+    const mailtoUri = `ssetiawtti@gmail.com?subject=${encodeURIComponent(
       emailSubject || `Halo dari ${senderName || 'Pengunjung Website'}`
     )}&body=${encodeURIComponent(
       `Halo Setia Wati,\n\nNama saya: ${senderName}\n\n${emailBody}\n\nSalam hangat,\n${senderName}`
@@ -149,7 +149,7 @@ export default function App() {
       <header className={`header ${isHeaderVisible ? '' : 'hidden'}`} id="navbar">
         <div className="container nav-container">
           <a href="#navbar" className="logo" id="brand-logo" onClick={(e) => handleSmoothScroll(e, 'navbar')}>
-            Tia<span>.</span>
+            Kwettiau<span>.</span>
           </a>
 
           {/* Nav Menu */}
@@ -176,7 +176,7 @@ export default function App() {
               onClick={(e) => handleSmoothScroll(e, 'favorit')}
               id="nav-link-favorit"
             >
-              Favorit
+              Idola
             </a>
             <a
               href="#motivasi"
@@ -231,7 +231,7 @@ export default function App() {
               <div className="hero-image" style={{ padding: 0, overflow: 'hidden', border: '4px solid var(--card-bg)' }}>
                 <LazyImage
                   src={tiaProfile}
-                  alt="Setia Wati (Tia)"
+                  alt="Setia Wati (KWETTIAU)"
                   id="tia-profile-photo"
                 />
               </div>
@@ -240,7 +240,7 @@ export default function App() {
             <div className="hero-content">
               <span className="hero-badge" id="hero-status">IT Student &amp; Designer</span>
               <h1 className="hero-name" id="hero-title-name">Setia Wati</h1>
-              <p className="hero-title" id="hero-subtitle">Biasa dipanggil Tia</p>
+              <p className="hero-title" id="hero-subtitle">Biasa dipanggil Kwettiau</p>
               
               <div className="hero-school" id="hero-school-info">
                 <Award className="skill-icon" />
@@ -261,7 +261,7 @@ export default function App() {
                   id="cta-pelajari"
                   onClick={(e) => handleSmoothScroll(e, 'tentang')}
                 >
-                  Pelajari Lebih Lanjut
+                  Tentang Saya
                 </a>
               </div>
             </div>
@@ -280,10 +280,10 @@ export default function App() {
           <div className="about-grid">
             <div className="about-text" id="about-story">
               <p>
-                Halo! Saya <strong>Setia Wati</strong>, biasa disapa <strong>Tia</strong>. Saya adalah seorang lulusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong> berusia 18 tahun dari <strong>SMK Patriot Pituruh</strong>.
+                Halo! Saya <strong>Setia Wati</strong>, biasa disapa <strong>Kwettiau</strong>. Saya adalah seorang lulusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong> berusia 18 tahun dari <strong>SMK Patriot Pituruh</strong>.
               </p>
               <p>
-                Dunia IT tidak pernah gagal membuat saya takjub. Namun, selain menghabiskan waktu dengan merakit jaringan atau berkutat di depan baris kode, saya memiliki keseimbangan hidup yang unik melalui hobi menulis jurnal fiksi serta menjelajahi dunia seni memasak (culinary arts). Bagi saya, memasak adalah bentuk kompilasi resep kehidupan, sementara menulis adalah cara saya menyusun logika naratif yang indah.
+                Dunia IT tidak pernah gagal membuat saya takjub. Namun, selain menghabiskan waktu dengan merakit jaringan atau berkutat di depan baris kode, saya memiliki keseimbangan hidup yang unik melalui hobi menulis jurnal fiksi serta menjelajahi dunia seni memasak. Bagi saya, memasak adalah bentuk kompilasi resep kehidupan, sementara menulis adalah cara saya menyusun logika naratif yang indah.
               </p>
             </div>
 
@@ -331,7 +331,7 @@ export default function App() {
               <Award className="skill-icon" />
               <span>Cisco Packet Tracer</span>
             </div>
-            <div className="skill-badge" id="skill-html">
+            {/* <div className="skill-badge" id="skill-html">
               <Award className="skill-icon" />
               <span>HTML5 Semantic</span>
             </div>
@@ -342,7 +342,7 @@ export default function App() {
             <div className="skill-badge" id="skill-responsive">
               <Award className="skill-icon" />
               <span>Mobile-First Responsive Layout</span>
-            </div>
+            </div> */}
             <div className="skill-badge" id="skill-troubleshooting">
               <Award className="skill-icon" />
               <span>Hardware &amp; Lan Troubleshooting</span>
@@ -354,9 +354,9 @@ export default function App() {
       {/* 5. Favorites Section with premium mouse tilt parallax */}
       <section className="section" id="favorit" style={{ backgroundColor: '#ffffff' }}>
         <div className="container">
-          <h2 className="section-title" id="favorites-section-title">Sosok Favorit &amp; Inspirasi</h2>
+          <h2 className="section-title" id="favorites-section-title">Idola</h2>
           <p className="section-subtitle" id="favorites-section-subtitle">
-            Dari panggung akting drama romantis hingga lapangan hijau, inilah jajaran tokoh idola yang selalu mewarnai hari-hari saya.
+            Inilah tokoh idola yang selalu mewarnai hari-hari saya.
           </p>
 
           <div className="favorites-grid" id="favorites-cards-container">
@@ -431,7 +431,7 @@ export default function App() {
       {/* 6. Motivasi Section */}
       <section className="section" id="motivasi" style={{ backgroundColor: '#fff5f6' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          <h2 className="section-title" id="motivasi-title">Motivasi &amp; Inspirasi</h2>
+          <h2 className="section-title" id="motivasi-title">Motivasi</h2>
           <p className="section-subtitle" id="motivasi-subtitle">
             Pilar impian, semangat hidup, dan filosofi sederhana saya dalam berkarya.
           </p>
@@ -445,7 +445,7 @@ export default function App() {
             <p className="obsession-quote" id="quote-text" style={{ borderLeft: 'none', paddingLeft: 0, textAlign: 'center', fontSize: '1.4rem' }}>
               "Menyelaraskan jalinan sirkuit Cisco atau merajut baris HTML terasa lebih magis dengan lantunan melodi favorit. Dedikasi Chen Zhe Yuan, gerakan dinamis Park Ji-Sung, dan pesona seni Harry Vaughan mengingatkan saya untuk selalu bergerak maju dengan ketulusan."
             </p>
-            <span className="obsession-by" id="quote-author" style={{ textAlign: 'center', marginTop: '12px', display: 'block' }}>— SETIA WATI (TIA)</span>
+            <span className="obsession-by" id="quote-author" style={{ textAlign: 'center', marginTop: '12px', display: 'block' }}>— SETIA WATI (Kwettiau)</span>
           </div>
         </div>
       </section>
@@ -453,9 +453,9 @@ export default function App() {
       {/* 7. My Playlist Section */}
       <section className="section" id="playlist" style={{ backgroundColor: '#ffffff' }}>
         <div className="container" style={{ maxWidth: '600px' }}>
-          <h2 className="section-title" id="playlist-section-title">Lagu Favorit Saya</h2>
+          <h2 className="section-title" id="playlist-section-title">Lagu Favorit</h2>
           <p className="section-subtitle" id="playlist-section-subtitle">
-            Lantunan nada penambah fokus dan penyemangat hari-hari saya dalam belajar TI.
+            Lantunan nada penambah fokus dan penyemangat dalam belajar TI.
           </p>
 
           <div className="player-widget" id="music-player-widget" style={{ marginTop: '30px' }}>
@@ -515,14 +515,14 @@ export default function App() {
       {/* 7. Footer / Contact Section */}
       <footer className="footer" id="kontak">
         <div className="container">
-          <h2 className="footer-brand" id="footer-logo">Tia<span>.</span></h2>
+          <h2 className="footer-brand" id="footer-logo">Kwettiau<span>.</span></h2>
           <p className="footer-tagline" id="footer-tagline">
             Lulusan TKJ SMK Patriot Pituruh | Menulis Jurnal &amp; Seni Kuliner
           </p>
 
           <div className="footer-socials" id="footer-social-links">
             <a 
-              href="https://www.tiktok.com/" 
+              href="https://www.tiktok.com/@aaitess1" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link"
@@ -543,7 +543,7 @@ export default function App() {
               </svg>
             </a>
             <a 
-              href="https://www.instagram.com/" 
+              href="https://www.instagram.com/ssetiawtii?igsh=OWYwYTIwd2t6OGdi" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-link"
@@ -575,7 +575,7 @@ export default function App() {
         <div className="modal-overlay" onClick={() => setIsModalOpen(false)} id="email-modal">
           <div className="modal-content" onClick={(e) => e.stopPropagation()} id="email-modal-body">
             <div className="modal-header">
-              <h3 className="modal-title">Kirim Surat Untuk Tia</h3>
+              <h3 className="modal-title">Kirim Surat Untuk Kwettiau</h3>
               <button onClick={() => setIsModalOpen(false)} className="modal-close" aria-label="Tutup">
                 <X size={18} />
               </button>
