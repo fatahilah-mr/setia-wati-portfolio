@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://setiawati.pages.dev/sitemap.xml
+Sitemap: https://kwettiau.fatah.web.id/sitemap.xml

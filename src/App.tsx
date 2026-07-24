@@ -565,7 +565,7 @@ export default function App() {
 
           <div className="footer-credits" id="footer-credits-info">
             <p>&copy; {new Date().getFullYear()} Setia Wati. All rights reserved.</p>
-            <p className="credit">Designed & Built by <a href="https://fatahmr.my.id" target="_blank" rel="noopener noreferrer">Fatahilah Miftahul Rahman</a></p>
+            <p className="credit">Designed & Built by <a href="https://fatah.web.id" target="_blank" rel="noopener noreferrer">Fatahilah Miftahul Rahman</a></p>
           </div>
         </div>
       </footer>
