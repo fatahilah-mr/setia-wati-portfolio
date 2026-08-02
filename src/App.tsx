@@ -515,7 +515,7 @@ export default function App() {
       {/* 7. Footer / Contact Section */}
       <footer className="footer" id="kontak">
         <div className="container">
-          <h2 className="footer-brand" id="footer-logo">Kwettiau<span>.</span></h2>
+          <div className="footer-brand" id="footer-logo">Kwettiau<span>.</span></div>
           <p className="footer-tagline" id="footer-tagline">
             Lulusan TKJ SMK Patriot Pituruh | Menulis Jurnal &amp; Seni Kuliner
           </p>
